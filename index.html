@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Corazón en Llamas</title>
+  <style>
+    body {
+      background-color: black;
+      margin: 0;
+      overflow: hidden;
+}
+.corazon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 100px;
+      animation: latido 1s infinite;
+      color: red;
+      text-shadow: 0 0 20px orange, 0 0 40px yellow, 0 0 60px red;
+}
+    @keyframes latido {
+      0%, 100% { transform: translate(-50%, -50%) scale(1);}
+      50% { transform: translate(-50%, -50%) scale(1.2);}
+}
+  </style>
+</head>
+<body>
+  <div class="corazon">❤️‍🔥</div>
+</body>
+</html>
